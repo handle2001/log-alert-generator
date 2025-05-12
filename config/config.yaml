@@ -1,0 +1,20 @@
+patterns:
+  - label: "nginx-5xx"
+    regex: "HTTP/1.1" 5\d{2}"
+    threshold: 5
+    window_seconds: 60
+    cooldown_seconds: 300
+
+notifiers:
+  email:
+    enabled: true
+    smtp_server: "smtp.example.com"
+    smtp_port: 587
+    username: "alerts@example.com"
+    password: "yourpassword"
+    from_addr: "alerts@example.com"
+    to_addrs:
+      - "admin@example.com"
+  slack:
+    enabled: false
+    webhook_url: "https://hooks.slack.com/services/..."
