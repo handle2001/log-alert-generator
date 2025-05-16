@@ -88,6 +88,6 @@ Develop a Python-based tool that continuously reads system or application logs, 
 **Total:** ~4 days solo development
 
 ## 5. Stretch Goals (Optional)
-- Web dashboard with alert history  
-- Alert deduplication logic  
+- Web dashboard with alert history
+- Alert deduplication logic
 - Export Prometheus metrics (e.g., alert count)
